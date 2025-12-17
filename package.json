@@ -16,6 +16,7 @@
     "chrome-types": "^0.1.397",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.19",
     "pinia": "^3.0.4",
     "pinia-plugin-persistedstate": "^4.7.1",
     "reka-ui": "^2.6.1",

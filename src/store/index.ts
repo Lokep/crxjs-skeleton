@@ -15,10 +15,6 @@ store.use(
       getItem: storage.getItem,
       setItem: storage.setItem,
     },
-
-    beforeHydrate: async () => {
-
-    },
   }),
 )
 
