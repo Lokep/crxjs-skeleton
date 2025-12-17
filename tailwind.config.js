@@ -1,20 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
-    content: [
+  darkMode: ["class"],
+  content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-  	extend: {
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  		colors: {}
-  	}
+    extend: {
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)'
+      },
+      colors: {}
+    }
   },
-  plugins: [require("tailwindcss-animate"),require('@tailwindcss/typography'),],
+  plugins: [
+    require("tailwindcss-animate"), 
+    // https://github.com/tailwindlabs/tailwindcss-typography
+    require('@tailwindcss/typography'),
+  ],
 }
 

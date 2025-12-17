@@ -64,3 +64,7 @@ https://18055975947.github.io/extension/
 
 
 https://crxjs.dev/zh/guide/installation/create-crxjs
+
+
+## webext-bridge 用法
+https://www.doubao.com/thread/wdee2a57ba429b4b5
