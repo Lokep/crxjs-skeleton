@@ -8,6 +8,7 @@
     "build": "vue-tsc -b && vite build"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "@tanstack/vue-table": "^8.21.3",
     "chrome-types": "^0.1.397",
     "class-variance-authority": "^0.7.1",
