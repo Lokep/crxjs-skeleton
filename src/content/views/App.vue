@@ -4,6 +4,7 @@ import storage from '@/lib/storage'
 import  { useAppStore } from '@/store'
 import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
+import { sendMessage } from 'webext-bridge/content-script'
 
 const show = ref(false)
 const toggle = () => show.value = !show.value
@@ -12,6 +13,10 @@ const appStore = useAppStore()
 const{ me } = storeToRefs(appStore)
 
 me.value = JSON.parse(storage.local.getItem('me') || '{}')
+
+
+console.log(sendMessage('greet', { name: 'world' }))
+
 </script>
 
 <template>
