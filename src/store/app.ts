@@ -1,14 +1,12 @@
-import { defineStore } from "pinia";
-import { ref } from "vue";
+import { defineStore } from 'pinia'
+import { ref } from 'vue'
 
-
-export const useAppStore = defineStore('app', () =>{
+export const useAppStore = defineStore('app', () => {
   const me = ref<Record<string, any>>({})
 
-
-  return  {
-    me
+  return {
+    me,
   }
 }, {
-  persist: true
+  persist: true,
 })

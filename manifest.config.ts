@@ -36,7 +36,7 @@ export default defineManifest({
   permissions: [
     'sidePanel',
     'contentSettings',
-    'storage'
+    'storage',
   ],
 
   side_panel: {

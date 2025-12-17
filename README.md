@@ -54,17 +54,11 @@ npm run build
 ## CI/CD
 https://www.npmjs.com/package/chrome-webstore-upload-cli
 
-
-
-pnpm dlx shadcn-vue@1.0.3 add 
-
+pnpm dlx shadcn-vue@1.0.3 add
 
 https://18055975947.github.io/extension/
 
-
-
 https://crxjs.dev/zh/guide/installation/create-crxjs
-
 
 ## webext-bridge 用法
 https://www.doubao.com/thread/wdee2a57ba429b4b5

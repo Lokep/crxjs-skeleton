@@ -1,7 +1,3 @@
-
-
-
-
 export function doAuthCheck() {
-  // const 
+  // const
 }

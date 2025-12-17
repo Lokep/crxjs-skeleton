@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Button from '@/components/ui/button/Button.vue';
+import Button from '@/components/ui/button/Button.vue'
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import Button from '@/components/ui/button/Button.vue';
       <img src="@/assets/crx.svg" class="logo crx" alt="crx logo">
     </a>
   </div>
-<Button>这是</Button>
+  <Button>这是</Button>
 </template>
 
 <style scoped>

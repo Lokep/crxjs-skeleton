@@ -1,22 +1,20 @@
 <script setup lang="ts">
-import Logo from '@/assets/crx.svg'
-import storage from '@/lib/storage'
-import  { useAppStore } from '@/store'
 import { storeToRefs } from 'pinia'
 import { ref } from 'vue'
 import { sendMessage } from 'webext-bridge/content-script'
+import Logo from '@/assets/crx.svg'
+import storage from '@/lib/storage'
+import { useAppStore } from '@/store'
 
 const show = ref(false)
 const toggle = () => show.value = !show.value
 
 const appStore = useAppStore()
-const{ me } = storeToRefs(appStore)
+const { me } = storeToRefs(appStore)
 
 me.value = JSON.parse(storage.local.getItem('me') || '{}')
 
-
-console.log(sendMessage('greet', { name: 'world' }))
-
+sendMessage('greet', { name: 'world' })
 </script>
 
 <template>
@@ -26,7 +24,9 @@ console.log(sendMessage('greet', { name: 'world' }))
       class="popup-content"
       :class="show ? 'opacity-100' : 'opacity-0'"
     >
-      <h1 class="text-pink-500">{{ me }}</h1>
+      <h1 class="text-pink-500">
+        {{ me }}
+      </h1>
     </div>
     <button
       class="toggle-button"

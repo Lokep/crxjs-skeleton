@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils'
 import { itemVariants } from '.'
 
 const props = withDefaults(defineProps<PrimitiveProps & {
-  class?: HTMLAttributes["class"]
-  variant?: ItemVariants["variant"]
-  size?: ItemVariants["size"]
+  class?: HTMLAttributes['class']
+  variant?: ItemVariants['variant']
+  size?: ItemVariants['size']
 }>(), {
   as: 'div',
 })

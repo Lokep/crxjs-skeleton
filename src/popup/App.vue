@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import Button from "@/components/ui/button/Button.vue";
-import { useAppStore } from "@/store";
-import { storeToRefs } from "pinia";
+import { storeToRefs } from 'pinia'
+import Button from '@/components/ui/button/Button.vue'
+import { useAppStore } from '@/store'
 
-const appStore = useAppStore();
+const appStore = useAppStore()
 
-const { me } = storeToRefs(appStore);
+const { me } = storeToRefs(appStore)
 </script>
 
 <template>

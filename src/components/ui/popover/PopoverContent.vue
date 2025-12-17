@@ -14,7 +14,7 @@ defineOptions({
 })
 
 const props = withDefaults(
-  defineProps<PopoverContentProps & { class?: HTMLAttributes["class"] }>(),
+  defineProps<PopoverContentProps & { class?: HTMLAttributes['class'] }>(),
   {
     align: 'center',
     sideOffset: 4,

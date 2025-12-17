@@ -4,7 +4,7 @@ import { NumberFieldInput } from 'reka-ui'
 import { cn } from '@/lib/utils'
 
 const props = defineProps<{
-  class?: HTMLAttributes["class"]
+  class?: HTMLAttributes['class']
 }>()
 </script>
 

@@ -1,8 +1,6 @@
 import { createApp } from 'vue'
-import App from './views/App.vue'
 import store from '@/store'
-
-console.log('[CRXJS] Hello world from content script!')
+import App from './views/App.vue'
 
 /**
  * Mount the Vue app to the DOM.

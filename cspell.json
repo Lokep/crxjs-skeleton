@@ -21,7 +21,10 @@
     "vueuse",
     "dotenv",
     "rollup",
-    "pinia"
+    "pinia",
+    "antfu",
+    "crxjs",
+    "reka"
   ],
   "ignorePaths": [
     "**/node_modules/**",

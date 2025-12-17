@@ -1,27 +1,26 @@
-import storage, { initChromeStorageCache } from '@/lib/storage'
-import { createPinia, } from 'pinia'
+import { createPinia } from 'pinia'
 import { createPersistedState } from 'pinia-plugin-persistedstate' // 数据持久化
+import storage, { initChromeStorageCache } from '@/lib/storage'
 
 const CrxCacheKey = 'crx-cache'
-   await initChromeStorageCache(CrxCacheKey)
-   
+await initChromeStorageCache(CrxCacheKey)
+
 const store = createPinia()
 
 store.use(
   createPersistedState({
-    key:() => CrxCacheKey,
+    key: () => CrxCacheKey,
 
     storage: {
       getItem: storage.getItem,
       setItem: storage.setItem,
     },
 
-    beforeHydrate: async() => {
-   
-    }
+    beforeHydrate: async () => {
+
+    },
   }),
 )
-
 
 export default store
 
