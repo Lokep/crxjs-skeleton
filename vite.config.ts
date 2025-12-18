@@ -35,7 +35,7 @@ export default defineConfig({
         additionalData: `@import "${path.resolve(__dirname, 'src/style.css')}";`,
       },
       sass: {
-        additionalData: `@import "${path.resolve(__dirname, 'src/style.scss')}";`,
+        additionalData: `@import "${path.resolve(__dirname, 'src/style.css')}";`,
       },
       // 【Scss 示例】若用 Scss，替换为：
       // scss: {

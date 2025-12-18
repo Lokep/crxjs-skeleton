@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import store from '@/store'
 import App from './views/App.vue'
+import "../style.css"
 
 /**
  * Mount the Vue app to the DOM.
